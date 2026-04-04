@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <h2>Insert a number and confirm for generate an multiplication table</h2>
+
+    <form id="multiplication-form">
+      <div class="form-control">
+        <label for="number">Tabuada do:</label>
+        <input type="number" name="number" id="number" placeholder="3" />
+      </div>
+
+      <div class="form-control">
+        <label for="multiplicator">Multiply until:</label>
+        <input type="number" name="multiplicator" id="multiplicator" value="10" />
+      </div>
+
+      <input type="submit" value="Calculate" />
+    </form>
+
+    <h2 id="multiplication-title">
+      Multiplication table of number: <span></span>
+    </h2>
+
+    <div id="multiplication-operations">
+      <p>Inform a number for calculate an multiplication table...</p>
+    </div>
+
+  </body>
+</html>

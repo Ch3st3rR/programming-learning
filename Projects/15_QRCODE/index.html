@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR code</title>
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Scripts -->
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+   <header id="qr-header">
+  <h1>Generate QR Code</h1>
+  <p>Insert an URL or text, for create a QR code</p>
+</header>
+
+<form id="qr-form">
+  <input type="text" placeholder="Type a URL or text" />
+  <button type="submit">Generate QR Code!</button>
+</form>
+
+    <div id="qr-code">
+      <img src="img/qrcode.png" alt="QR code" />
+      </div>
+    </div>
+  </body>
+</html>
