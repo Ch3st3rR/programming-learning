@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Code Generator</title>
+
+  <!-- Roboto font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Scripts -->
+  <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+  <main class="container">
+    
+    <header id="qr-header">
+      <h1>Generate QR Code</h1>
+      <p>Insert a URL or text to create a QR code</p>
+    </header>
+
+    <!-- Form -->
+    <form id="qr-form">
+    <input 
+    type="text" 
+    placeholder="Type a URL or text"
+    required
+    autocomplete="off"
+    />
+      
+      <button type="submit">
+        Generate QR Code!
+      </button>
+    </form>
+
+    <!-- QR Code -->
+    <div id="qr-code">
+      <img src="img/qrcode.png" alt="Generated QR Code" />
+    </div>
+
+    <!-- Download -->
+      <button id="download-btn">
+        Download here!
+      </button>
+     </form>
+
+  </main>
+</body>
+</html>

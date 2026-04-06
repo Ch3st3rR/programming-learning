@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: hwb(313 24% 17%);
+}
+
+/* Container */
+.container {
+  background-color: #ffadad;
+  max-height: 260px; /* melhora animação */
+  width: 400px;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden; /* evita "vazar" conteúdo */
+  transition: 0.4s ease;
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.25),
+    0 0 20px rgba(128, 0, 128, 0.2);
+}
+
+.container.active {
+  max-height: 500px;
+}
+
+/* Header */
+#qr-header {
+  text-align: center;
+}
+
+#qr-header h1 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+#qr-header p {
+  color: #4d3434;
+  font-size: 0.9rem;
+}
+
+/* Form */
+#qr-form {
+  margin: 20px 15px;
+}
+
+#qr-form input,
+#qr-form button {
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* Input */
+#qr-form input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 15px;
+  background: #fff;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+#qr-form input::placeholder {
+  color: #999;
+}
+
+#qr-form input:focus {
+  border-color: #7a3cff;
+  box-shadow: 0 0 8px rgba(122, 60, 255, 0.3);
+}
+
+/* Button */
+#qr-form button {
+  margin-top: 20px;
+  background: #210d38;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+#qr-form button:hover {
+  opacity: 1;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+#qr-form button:active {
+  transform: scale(0.98);
+}
+
+/* QR CODE */
+#qr-code {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  margin: 20px 15px;
+  border-radius: 5px;
+
+  border: 1px solid rgba(0,0,0,0.1); /* suavizado */
+  
+  opacity: 0;
+  transform: scale(0.9); /* animação mais bonita */
+  transition: 0.5s ease;
+}
+
+.container.active #qr-code {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+/* Download */
+#download-btn {
+  background: #4fff84; 
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s; 
+  display: block;
+  margin: 20px auto;
+}
+
+
+#download-btn:hover {
+  transform: translateY(-2px); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+}
