@@ -309,34 +309,52 @@ button {
   margin-bottom: 40px;
 }
 
-/* Informations */
+/* Information */
 
-.columns {
+/* ===== SECTION ===== */
+.iphone-section {
+  max-width: 3000px;
+  margin: 0 auto;
+  padding: 150px 150px;
+  text-align: center;
+  border-top: 3px solid #2a2a2a;
   display: flex;
-  gap: 80px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+.iphone-section h1 {
+  font-size: 3rem;
+  margin-bottom: 80px;
+  width: 100%;
+}
+
+/* ===== COLUMNS ===== */
+.columns {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  gap: 80px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* ===== COLUMN ===== */
 .col {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
+  min-width: 400px;
+  text-align: center;
 }
 
+/* ===== TITLES ===== */
 .title {
   font-size: 0.9rem;
   color: #888;
   margin-bottom: 10px;
-}
-
-.col a {
-  color: #aaa;
-  display: block;
-  margin: 6px 0;
-  transition: 0.3s;
-}
-
-.col a:hover {
-  color: #fff;
 }
 
 .col h2 {
@@ -345,46 +363,21 @@ button {
   margin-bottom: 10px;
 }
 
+/* ===== LINKS ===== */
+.col a {
+  color: #aaa;
+  margin: 6px 0;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.col a:hover {
+  color: #fff;
+}
+
 .small {
   font-size: 0.85rem;
   color: #888;
-}
-
-.iphone-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 80px 40px;
-}
-
-.iphone-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 80px 40px;
-  text-align: center;
-}
-
-.col {
-  min-width: 220px; 
-}
-
-.columns {
-  display: flex;
-  justify-content: space-between; 
-  align-items: flex-start;
-  gap: 60px;
-
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: left; 
-}
-
-.iphone-section {
-  border-top: 1px solid #2a2a2a; 
-}
-
-.iphone-section h1 {
-  font-size: 3rem;
-  margin-bottom: 40px;
 }
 
 
