@@ -22,7 +22,16 @@ body {
   min-width: 400px;
   min-height: 400px;
   background-color: #1d1e33;
+  font-size: 1rem;
   padding: 2rem;
+  transition: 0.3s;
+  box-shadow: 0 0 0px #ffffff; 
+  
+}
+
+.container:hover {
+  box-shadow: 0 0 15px #ffffff, 0 0 30px #ffffff; 
+  transform: scale(1.05); 
 }
 
 /* IMC Form */
@@ -153,4 +162,21 @@ button:hover {
 
 .high {
   color: #db1912;
+}
+
+.action-control {
+  background: #272727;
+  color: white;
+  padding: 12px 24px;
+  border: none; 
+  border-radius: 999px; 
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+  box-shadow: 0 0 0px #0ea5e9; 
+}
+
+.action-control:hover {
+  box-shadow: 0 0 15px #0ea5e9, 0 0 30px #0ea5e9; 
+  transform: scale(1.05); 
 }
