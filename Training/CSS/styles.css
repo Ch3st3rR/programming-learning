@@ -1,0 +1,103 @@
+/* Fonts */
+
+/* body {
+            background-color: royalblue; 
+        }
+        h1 {
+            color: red; 
+        }
+        p {
+            color: white; 
+        }
+
+        #p1 {
+            color: tomato; 
+            font-family: "press Start 2P", "consolas", sans-serif; 
+        }
+
+        .p2 {
+            color: rgb(105, 67, 61); 
+            font-family: "consolas", sans-serif;
+            font-style: italic;
+            font-weight: bold;
+            text-decoration: cyan dotted underline;
+            font-size: 18px; 
+        }
+
+*/
+
+/* Borders */
+
+/* h1 {
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: double;
+    border-left-width: 10px; 
+    border-left-color: silver; 
+}
+
+p {
+    /* border-style: dashed, dotted, double, ridge, groove, inset, outset; */
+/*  border-style: outset; 
+    border-width: 5px; 
+    border-color: gold; 
+    border-radius: 10px;
+    padding: 5px; 
+} */
+
+/* Background */
+/* body {
+    background: linear-gradient(to left, skyblue, lightgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+} */
+
+/* body {
+    /* background-image: url("myBackground.jpg"); */
+/* background-image: url("/Training/img/images.jpeg");  
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center; 
+    background-size: cover; 
+} */
+
+h1 {
+  background: linear-gradient(to left, skyblue, white);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+p {
+  background: linear-gradient(to right, skyblue, white);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Margin */
+body {
+  margin: 0px;
+}
+
+#box1 {
+  border: 5px solid;
+  width: 250px;
+  height: 250px;
+  font-size: 22px;
+  background: greenyellow;
+  /* 
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px; 
+
+    margin: 50px; 
+    */
+}
+
+#box2 {
+  border: 5px solid;
+  width: 250px;
+  height: 250px;
+  font-size: 22px;
+  background: dodgerblue;
+}
